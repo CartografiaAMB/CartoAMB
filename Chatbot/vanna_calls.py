@@ -35,6 +35,7 @@ def generate_sql_cached(question: str):
 def is_sql_valid_cached(sql: str):
     vn = setup_vanna()
     return vn.is_sql_valid(sql=sql)
+    #bjvg
 
 @st.cache_data(show_spinner="Running SQL query ...")
 def run_sql_cached(sql: str):
